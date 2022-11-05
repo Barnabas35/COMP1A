@@ -1,2 +1,2 @@
 # COMP1A
-Online schedule and upcomming assigments tracking website for COMP1A at MTU.
+Online schedule and upcoming assignments tracking website for COMP1A at MTU.
