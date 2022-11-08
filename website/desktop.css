@@ -1,5 +1,29 @@
 
+nav {
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 20%;
+}
+
 td {
     text-align: center;
     min-width: 100px;
+}
+
+#left-link {
+    background-color: beige;
+    font-size: 2em;
+    padding: 10px;
+    border: 4px solid black;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+#right-link {
+    background-color: beige;
+    font-size: 2em;
+    padding: 10px;
+    border: 4px solid black;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
 }
