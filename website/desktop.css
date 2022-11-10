@@ -1,28 +1,82 @@
 
-nav {
+h1 {
     width: max-content;
-    margin: 22% auto 22% auto;
+    margin: 4% auto;
+    color: white;
+    font-size: 5em;
+    text-decoration: underline;
+}
+
+body {
+    background-color: lightcoral;
+}
+
+table {
+    width: max-content;
+    margin: 3% auto;
+    background-color: white;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+tr {
+    color: lightcoral;
+    padding: 2px;
 }
 
 td {
     text-align: center;
     min-width: 100px;
+    color: inherit;
+    font-size: 1.4em;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: lightcoral;
+}
+
+.dark-row {
+    background-color: lightpink;
+    color: white;
+}
+
+.dark-col {
+
+}
+
+.first-col {
+    border-right: 2px solid lightcoral;
+}
+
+.first-row {
+    border-bottom: 2px solid lightcoral;
 }
 
 #left-link {
-    background-color: beige;
-    font-size: 2em;
+    background-color: white;
+    font-size: 3em;
     padding: 10px;
-    border: 4px solid black;
+    border: 4px solid lightpink;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
 }
 
 #right-link {
-    background-color: beige;
-    font-size: 2em;
+    background-color: white;
+    font-size: 3em;
     padding: 10px;
-    border: 4px solid black;
+    border: 4px solid lightpink;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
+}
+
+#main-nav {
+    width: max-content;
+    margin: 18% auto;
+}
+
+.hide {
+    visibility: collapse;
 }
