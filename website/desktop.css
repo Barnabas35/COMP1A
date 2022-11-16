@@ -77,6 +77,11 @@ a {
     margin: 30vh auto;
 }
 
+#home-nav {
+    width: max-content;
+    margin: 0 auto;
+}
+
 .hide {
     visibility: collapse;
 }
