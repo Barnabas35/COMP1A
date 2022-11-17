@@ -43,7 +43,8 @@ a {
 }
 
 .dark-col {
-
+    color: white;
+    background-color: lightpink;
 }
 
 .first-col {
@@ -52,6 +53,20 @@ a {
 
 .first-row {
     border-bottom: 2px solid lightcoral;
+}
+
+.column-div {
+    float: left;
+    margin: 2vw;
+}
+
+.simple-center {
+    width: max-content;
+    margin: auto;
+}
+
+.to-do-table {
+    width: 35vw;
 }
 
 #left-link {
