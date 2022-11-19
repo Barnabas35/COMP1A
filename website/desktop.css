@@ -1,7 +1,7 @@
 
 h1 {
     width: max-content;
-    margin: 4% auto;
+    margin: 4vw auto;
     color: white;
     font-size: 5em;
     text-decoration: underline;
@@ -13,7 +13,7 @@ body {
 
 table {
     width: max-content;
-    margin: 3% auto;
+    margin: 4.5vw auto;
     background-color: white;
     border-spacing: 0;
     border-collapse: collapse;
@@ -28,7 +28,7 @@ td {
     text-align: center;
     min-width: 100px;
     color: inherit;
-    font-size: 1.4em;
+    font-size: calc(16px + 0.4vw);
     padding: 5px;
 }
 
@@ -56,7 +56,6 @@ a {
 }
 
 .column-div {
-    float: left;
     margin: 2vw;
 }
 
@@ -66,7 +65,17 @@ a {
 }
 
 .to-do-table {
-    width: 35vw;
+    width: 90vw;
+    margin: 0;
+}
+
+.to-do-table tr:nth-child(even) {
+    background-color: lightpink;
+    color: white;
+}
+
+.to-do-table tr:first-child {
+    border-bottom: 2px solid lightcoral;
 }
 
 #left-link {
@@ -97,6 +106,77 @@ a {
     margin: 0 auto;
 }
 
-.hide {
-    visibility: collapse;
+@media only screen and (min-width: 1100px) {
+    .column-div {
+        float: left;
+    }
+
+    .to-do-table {
+        width: 35vw;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .vertical {
+        display: -ms-grid;
+        -ms-grid-rows: auto auto;
+        -ms-grid-columns: auto auto;
+
+    }
+
+    .vertical tbody {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+
+    }
+
+    @supports (display: grid) {
+        .vertical {
+            display: grid;
+            grid-template-columns: min-content min-content;
+            grid-template-rows: auto auto;
+        }
+
+        .vertical tbody {
+            grid-area: body;
+        }
+
+    }
+
+    .vertical tbody {
+        display: flex;
+
+    }
+
+    .vertical tr {
+        width: 17vw;
+        padding: 0;
+    }
+
+    .vertical td {
+        display: block;
+        height: max-content;
+        min-height: 26px;
+    }
+
+    .first-row {
+        max-width: min-content;
+    }
+
+    .first-row td{
+        padding-right: 0;
+        padding-left: 0;
+        max-width: 80px;
+        min-width: 80px;
+    }
+
+    .first-row td:first-child {
+        border-bottom: 5px solid lightcoral;
+    }
+
+    .first-col {
+        border-right: 0;
+        border-bottom: 5px solid lightcoral;
+    }
+
 }
